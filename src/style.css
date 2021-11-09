@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(224, 221, 221);
 }
 
 h1 {
@@ -47,6 +48,7 @@ h1 {
 .refresh,
 .submit-btn {
   width: 70px;
+  border: 2px solid rgb(54, 53, 53);
 }
 
 .submit-btn {
@@ -58,7 +60,7 @@ h1 {
 .scoreboard-table {
   width: 100%;
   margin: 20px 0;
-  border: 1px solid grey;
+  border: 2px solid rgb(54, 53, 53);
   border-radius: 2px;
 }
 
@@ -80,4 +82,5 @@ h1 {
   width: 60%;
   height: 30px;
   margin-bottom: 20px;
+  border: 2px solid rgb(54, 53, 53);
 }
