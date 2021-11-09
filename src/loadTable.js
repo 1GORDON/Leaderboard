@@ -1,4 +1,3 @@
-
 const scoreData = [
   { name: 'name', score: 100 },
   { name: 'name', score: 53 },
@@ -16,7 +15,7 @@ function loadTable() {
     const td = document.createElement('td');
     td.className = 'table-data';
     td.innerHTML = `${data.name}: ${data.score}`;
-  
+
     tr.appendChild(td);
     table.appendChild(tr);
   });

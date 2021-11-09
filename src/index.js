@@ -1,4 +1,4 @@
-import loadTable from './loadTable';
+import loadTable from './loadTable.js';
 import './style.css';
 
 loadTable();
