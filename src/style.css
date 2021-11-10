@@ -1,3 +1,87 @@
 body {
-  background-color: bisque;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(224, 221, 221);
+  width: 100%;
+}
+
+h1 {
+  margin-left: 30px;
+}
+
+.main-scores {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.recent-scores,
+.add-score {
+  padding: 0 20px;
+  min-width: 280px;
+}
+
+.recent-scores {
+  flex: 1;
+}
+
+.recent-scores-other {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.recent-scores-other h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+}
+
+.table-row:nth-child(even) {
+  background-color: rgba(148, 147, 147, 0.5);
+}
+
+.refresh,
+.submit-btn {
+  width: 70px;
+  border: 2px solid rgb(54, 53, 53);
+}
+
+.submit-btn {
+  align-self: flex-end;
+  height: 30px;
+  margin-right: 38%;
+}
+
+.scoreboard-table {
+  width: 100%;
+  margin: 20px 0;
+  border: 2px solid rgb(54, 53, 53);
+  border-radius: 2px;
+}
+
+.add-score {
+  flex: 1;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.add-form h2 {
+  margin-top: 0;
+}
+
+.add-form input[type="text"] {
+  width: 60%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(54, 53, 53);
 }
