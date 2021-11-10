@@ -7,6 +7,8 @@ In this project i acheived the following
 - Wrote plain HTML markup with minimum styling
 - Used Gitflow in this project
 
+![screenshot](./images/screenshot.JPG)
+
 ## Built With
 
 - Webpack

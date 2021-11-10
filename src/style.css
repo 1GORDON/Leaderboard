@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(224, 221, 221);
+  width: 100%;
 }
 
 h1 {
