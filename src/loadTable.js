@@ -7,7 +7,7 @@ const scoreData = [
   { name: 'name', score: 98 },
 ];
 
-function loadTable() {
+const loadTable = () => {
   const table = document.querySelector('.scoreboard-table');
   scoreData.forEach((data) => {
     const tr = document.createElement('tr');
@@ -19,5 +19,5 @@ function loadTable() {
     tr.appendChild(td);
     table.appendChild(tr);
   });
-}
+};
 export default loadTable;
