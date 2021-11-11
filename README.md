@@ -2,10 +2,9 @@
 
 In this project i acheived the following
 
-- Created a new game with the name of my choice by using the API.
-- Implementd the "Refresh" button (receiving data from the API and parsing the JSON).
-- Implemented the form "Submit" button (sending data to the API).
-- Used async and await JavaScript features to consume the API.
+- improved the look and feel of the application, adding the styles of your choice.
+- Maintained the general layout of the wireframe
+- Used plain CSS to style the page
 
 ![screenshot](./images/screenshot.JPG)
 
