@@ -31,7 +31,9 @@ h2 {
 
 .recent-scores {
   flex: 1;
-  height: 300px;
+  max-height: 80vh;
+  overflow-y: scroll;
+
 }
 
 .recent-scores-other {
@@ -70,21 +72,11 @@ h2 {
   margin-right: 38%;
 }
 
-.table-container {
-  height: auto;
-  min-height: 250px;
-  margin: 20px 0;
-  border: 1px solid grey;
-  border-radius: 2px;
-}
-
 .scoreboard-table {
   width: 100%;
   margin: 20px 0;
   border: 2px solid rgb(54, 53, 53);
-  border-radius: 2px;
-  background-color: aqua;
-  height: 300px;
+  border-radius: 7px;
 }
 
 .add-score {
