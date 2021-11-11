@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(224, 221, 221);
-  width: 100%;
 }
 
 h1 {
@@ -50,12 +49,22 @@ h1 {
 .submit-btn {
   width: 70px;
   border: 2px solid rgb(54, 53, 53);
+  cursor: pointer;
+  box-shadow: 3.5px 3.5px;
 }
 
 .submit-btn {
   align-self: flex-end;
   height: 30px;
   margin-right: 38%;
+}
+
+.table-container {
+  height: auto;
+  min-height: 250px;
+  margin: 20px 0;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 
 .scoreboard-table {

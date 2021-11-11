@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="main.js"></script></head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,800&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <title>Leaderboard</title>
+<script defer src="/Leaderboard/main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <main class="main-section">
+        <h1 class="main-heading">Leaderboard</h1>
+
+        <section class="main-scores">
+            <div class="recent-scores">
+                <div class="recent-scores-other">
+                    <h2>Recent scores</h2>
+                    <button type="button" class="refresh">Refresh</button>
+                </div>
+                <table class="scoreboard-table">
+
+                </table>
+            </div>
+            <div class="add-score">
+                <form action="#" class="add-form">
+                    <h2>Add your score</h2>
+                    <input type="text" name="name" placeholder="Your name" id="name" required>
+                    <input type="text" name="score" placeholder="Your score" id="score" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

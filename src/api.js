@@ -1,4 +1,4 @@
-const url = '';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
 const createGame = async () => {
   try {
@@ -11,15 +11,15 @@ const createGame = async () => {
         'content-type': 'application/json; charset=UTF-8',
       },
     });
-    const json = await response.json();
-    const gameId = json.result.split(' ')[3];
+    const newPost = await response.json();
+    const gameId = newPost.result.split(' ')[3];
     localStorage.setItem('gameID', JSON.stringify(gameId));
   } catch (error) {
     throw new Error(error.message);
   }
 };
 
-export const gameID = () => {
+const gameID = () => {
   const id = JSON.parse(localStorage.getItem('gameID'));
 
   if (!id) {
@@ -28,9 +28,9 @@ export const gameID = () => {
   return id;
 };
 
-export const saveToApi = async (gameID, user, score) => {
+const saveToApi = async (gameID, user, score) => {
   try {
-    const response = await fetch(``), {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/v4n9rcNTL0SXbCD8IPLG/scores/', {
       method: 'POST',
       body: JSON.stringify({
         user,
@@ -46,12 +46,14 @@ export const saveToApi = async (gameID, user, score) => {
   }
 };
 
-export const getScores = async (gameID) => {
+const getScores = async (gameID) => {
   try {
-    const response = await fetch(``);
+    const response = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID()}/scores/`);
     const data = await response.json();
     return data.result;
   } catch (error) {
     throw new Error(error.message);
   }
 };
+
+export { getScores, saveToApi, gameID };
