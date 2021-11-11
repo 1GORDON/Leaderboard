@@ -3,9 +3,9 @@ const recentScores = (scores) => {
 
   scores.forEach((data) => {
     const tr = document.createElement('tr');
-    tr.className = 'table-row';
+    tr.classList.add('table-row');
     const td = document.createElement('td');
-    td.className = 'table-data';
+    td.classList.add('table-data');
     td.innerHTML = `${data.user}: ${data.score}`;
 
     tr.appendChild(td);

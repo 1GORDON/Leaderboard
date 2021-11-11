@@ -1,4 +1,4 @@
-import { saveToApi, gameID } from './api.js';
+import { saveToApi } from './api.js';
 
 const addScore = () => {
   const addForm = document.querySelector('.add-form');
@@ -7,10 +7,10 @@ const addScore = () => {
 
   addForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    saveToApi(gameID, name.value, score.value)
+    saveToApi(name.value, score.value)
       .then((response) => {
         if (response.result === 'Leaderboard scores are well created.') {
-          window.location.reload();
+          window.reload();
         }
       });
   });

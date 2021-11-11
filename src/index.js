@@ -1,18 +1,20 @@
 import addScore from './addScore.js';
 import recentScores from './recentScores.js';
-// import refresh from './refresh';
-import { getScores, gameID } from './api.js';
+import { getScores } from './api.js';
 import './style.css';
 
-const loadTable = () => {
-  window.onload = () => {
-    if (gameID()) {
-      getScores(gameID)
-        .then((scores) => recentScores(scores));
-    }
-  };
+const tableContent = document.querySelector('.scoreboard-table');
+
+const myFunction = async () => {
+  const myValue = await getScores();
+  recentScores(myValue);
+  addScore();
 };
 
-addScore();
-// refresh();
-loadTable();
+myFunction();
+
+const refresh = document.querySelector('.refresh');
+refresh.addEventListener('click', () => {
+  tableContent.innerHTML = '';
+  myFunction();
+});
