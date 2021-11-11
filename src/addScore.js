@@ -11,6 +11,8 @@ const addScore = () => {
       .then((response) => {
         if (response.result === 'Leaderboard scores are well created.') {
           window.reload();
+          name.value = '';
+          score.value = '';
         }
       });
   });

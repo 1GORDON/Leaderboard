@@ -7,12 +7,20 @@ body {
 
 h1 {
   margin-left: 30px;
+  font-weight: 800;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.781);
 }
 
 .main-scores {
   display: flex;
   flex-wrap: wrap;
   padding: 0 10%;
+  height: 500px;
 }
 
 .recent-scores,
@@ -23,6 +31,7 @@ h1 {
 
 .recent-scores {
   flex: 1;
+  height: 300px;
 }
 
 .recent-scores-other {
@@ -51,6 +60,8 @@ h1 {
   border: 2px solid rgb(54, 53, 53);
   cursor: pointer;
   box-shadow: 3.5px 3.5px;
+  background-color: rgb(171, 196, 245);
+  border-radius: 7px;
 }
 
 .submit-btn {
@@ -72,6 +83,8 @@ h1 {
   margin: 20px 0;
   border: 2px solid rgb(54, 53, 53);
   border-radius: 2px;
+  background-color: aqua;
+  height: 300px;
 }
 
 .add-score {
