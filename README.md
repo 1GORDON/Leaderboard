@@ -2,10 +2,10 @@
 
 In this project i acheived the following
 
-- Used ES6 modules, with import and export
-- Created an npm project with webpack
-- Wrote plain HTML markup with minimum styling
-- Used Gitflow in this project
+- Created a new game with the name of my choice by using the API.
+- Implementd the "Refresh" button (receiving data from the API and parsing the JSON).
+- Implemented the form "Submit" button (sending data to the API).
+- Used async and await JavaScript features to consume the API.
 
 ![screenshot](./images/screenshot.JPG)
 
