@@ -9,10 +9,6 @@ In this project i acheived the following
 
 ![screenshot](./images/screenshot.JPG)
 
-## Live Link
-
-- [Go Live](https://1gordon.github.io/Leaderboard/)
-
 ## Built With
 
 - Webpack
