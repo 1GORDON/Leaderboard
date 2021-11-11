@@ -106,4 +106,5 @@ h2 {
   height: 30px;
   margin-bottom: 20px;
   border: 2px solid rgb(54, 53, 53);
+  border-radius: 7px;
 }
