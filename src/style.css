@@ -65,15 +65,15 @@ h2 {
   border-radius: 7px;
 }
 
-.refresh:hover,
-.submit-btn:hover {
-  color: white;
-}
-
 .submit-btn {
   align-self: flex-end;
   height: 30px;
   margin-right: 38%;
+}
+
+.refresh:hover,
+.submit-btn:hover {
+  color: white;
 }
 
 .scoreboard-table {
