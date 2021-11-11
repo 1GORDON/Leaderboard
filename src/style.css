@@ -33,7 +33,6 @@ h2 {
   flex: 1;
   max-height: 80vh;
   overflow-y: scroll;
-
 }
 
 .recent-scores-other {
@@ -62,8 +61,13 @@ h2 {
   border: 2px solid rgb(54, 53, 53);
   cursor: pointer;
   box-shadow: 3.5px 3.5px;
-  background-color: rgb(171, 196, 245);
+  background-color: rgba(148, 147, 147, 0.5);
   border-radius: 7px;
+}
+
+.refresh:hover,
+.submit-btn:hover {
+  color: white;
 }
 
 .submit-btn {
