@@ -3,17 +3,24 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(224, 221, 221);
-  width: 100%;
 }
 
 h1 {
   margin-left: 30px;
+  font-weight: 800;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.781);
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.781);
 }
 
 .main-scores {
   display: flex;
   flex-wrap: wrap;
   padding: 0 10%;
+  height: 500px;
 }
 
 .recent-scores,
@@ -24,6 +31,8 @@ h1 {
 
 .recent-scores {
   flex: 1;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
 
 .recent-scores-other {
@@ -50,6 +59,10 @@ h1 {
 .submit-btn {
   width: 70px;
   border: 2px solid rgb(54, 53, 53);
+  cursor: pointer;
+  box-shadow: 3.5px 3.5px;
+  background-color: rgba(148, 147, 147, 0.5);
+  border-radius: 7px;
 }
 
 .submit-btn {
@@ -58,11 +71,16 @@ h1 {
   margin-right: 38%;
 }
 
+.refresh:hover,
+.submit-btn:hover {
+  color: white;
+}
+
 .scoreboard-table {
   width: 100%;
   margin: 20px 0;
   border: 2px solid rgb(54, 53, 53);
-  border-radius: 2px;
+  border-radius: 7px;
 }
 
 .add-score {
@@ -84,4 +102,5 @@ h1 {
   height: 30px;
   margin-bottom: 20px;
   border: 2px solid rgb(54, 53, 53);
+  border-radius: 7px;
 }

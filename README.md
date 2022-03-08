@@ -2,10 +2,9 @@
 
 In this project i acheived the following
 
-- Used ES6 modules, with import and export
-- Created an npm project with webpack
-- Wrote plain HTML markup with minimum styling
-- Used Gitflow in this project
+- improved the look and feel of the application, adding the styles of your choice.
+- Maintained the general layout of the wireframe
+- Used plain CSS to style the page
 
 ![screenshot](./images/screenshot.JPG)
 
@@ -21,8 +20,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- Clone this repo to your local machine
-- Open the `index.html` in your browser
+- Clone this repo to your local machine, run git clone and paste the url of the repository
+  `git clone https://github.com/1GORDON/Leaderboard.git` in your command prompt
+- Open the project in your browser run `npm run build` and then run `npm run start`.
 
 ## Authors
 
