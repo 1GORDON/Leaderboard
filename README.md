@@ -24,6 +24,10 @@ To get a local copy up and running follow these simple example steps.
   `git clone https://github.com/1GORDON/Leaderboard.git` in your command prompt
 - Open the project in your browser run `npm run build` and then run `npm run start`.
 
+## Live Link
+
+- [Go Live](https://leaderboard-gordon.netlify.app/)
+
 ## Authors
 
 **Gordon Tinyefuza**
